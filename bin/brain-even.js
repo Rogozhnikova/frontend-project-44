@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import { playGame } from '../src/bra.js';
+import start from '../src/games/logEven.js';
 
-playGame();
+start();
