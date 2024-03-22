@@ -29,8 +29,9 @@ function getQuestionAndAnswer() {
   const number1 = generateRandomNumber(1, 50);
   const number2 = generateRandomNumber(1, 50);
   const operator = generateRandomOperator();
-  const answer = calculateExpression(number1, number2, operator);
+  const correctAnswer = calculateExpression(number1, number2, operator);
   const question = `${number1} ${operator} ${number2}`;
+  const answer = String(correctAnswer);
   return [question, answer];
 }
 
