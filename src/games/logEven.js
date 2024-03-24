@@ -4,7 +4,7 @@ function isEven(number) {
   return number % 2 === 0;
 }
 
-const rules = 'Answer "yes" if the number is even, and "no" if it is odd.';
+const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function getQuestionAndAnswer() {
   const randomNumber = Math.floor(Math.random() * 100);
