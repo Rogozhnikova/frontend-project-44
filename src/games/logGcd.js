@@ -7,9 +7,8 @@ function generateRandomNumber(min, max) {
 function calculateGCD(a, b) {
   if (b === 0) {
     return a;
-  } else {
-    return calculateGCD(b, a % b);
   }
+  return calculateGCD(b, a % b);
 }
 
 const rules = 'Find the greatest common divisor of given numbers.';
