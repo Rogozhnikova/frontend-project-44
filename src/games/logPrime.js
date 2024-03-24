@@ -1,5 +1,4 @@
 import startGame from '../index.js';
-import randomNumber from '../randomNumber.js';
 
 function isPrime(number) {
   if (number <= 1) {
@@ -18,7 +17,8 @@ function isPrime(number) {
 const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 function getQuestionAndAnswer() {
-  const question = `${randomNumber}`;
+  const randomNum = Math.floor(Math.random() * 100);
+  const question = `${randomNum}`;
   const answer = isPrime(question) ? 'yes' : 'no';
   return [question, answer];
 }
