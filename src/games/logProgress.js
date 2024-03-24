@@ -11,24 +11,19 @@ function generateArithmeticProgression(length) {
   return progression;
 }
 
-function hideNumber(progression) {
-  const position = Math.floor(Math.random() * progression.length);
-  const hiddenNumber = progression[position];
-  progression[position] = '..';
-
-  return hiddenNumber;
-}
-
 const rules = 'What number is missing in the progression?';
 
 function getQuestionAndAnswer() {
   const minLength = 5;
   const length = Math.floor(Math.random() * 6) + minLength;
   const progression = generateArithmeticProgression(length);
-  const hiddenNumber = hideNumber(progression);
+  const position = Math.floor(Math.random() * progression.length);
+  const hiddenNumber = progression[position];
+  const updatedProgression = [...progression];
+  updatedProgression[position] = '..';
   const correctAnswer = hiddenNumber;
   const answer = String(correctAnswer);
-  const question = progression.join(', ');
+  const question = updatedProgression.join(' ');
   return [question, answer];
 }
 
