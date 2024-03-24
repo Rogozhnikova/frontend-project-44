@@ -23,7 +23,7 @@ function calculateExpression(num1, num2, operator) {
   }
 }
 
-const rules = 'Welcome to the Calculator Game! Answer the following math expressions.';
+const rules = 'What is the result of the expression?';
 
 function getQuestionAndAnswer() {
   const number1 = generateRandomNumber(1, 50);
