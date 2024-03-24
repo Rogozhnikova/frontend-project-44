@@ -1,8 +1,5 @@
 import startGame from '../index.js';
-
-function generateRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
+import randomNumber from '../randomNumber.js';
 
 function calculateGCD(a, b) {
   if (b === 0) {
@@ -14,8 +11,8 @@ function calculateGCD(a, b) {
 const rules = 'Find the greatest common divisor of given numbers.';
 
 function getQuestionAndAnswer() {
-  const number1 = generateRandomNumber(1, 50);
-  const number2 = generateRandomNumber(1, 50);
+  const number1 = randomNumber(1, 50);
+  const number2 = randomNumber(1, 50);
   const correctAnswer = calculateGCD(number1, number2);
   const question = `${number1} ${number2}`;
   const answer = String(correctAnswer);

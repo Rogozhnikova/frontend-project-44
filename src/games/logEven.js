@@ -1,4 +1,5 @@
 import startGame from '../index.js';
+import randomNumber from '../randomNumber.js';
 
 function isEven(number) {
   return number % 2 === 0;
@@ -7,8 +8,7 @@ function isEven(number) {
 const rules = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 function getQuestionAndAnswer() {
-  const randomNumber = Math.floor(Math.random() * 100);
-  const question = `${randomNumber}`;
+  const question = randomNumber();
   const answer = isEven(question) ? 'yes' : 'no';
   return [question, answer];
 }
