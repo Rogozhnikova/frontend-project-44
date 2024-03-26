@@ -1,5 +1,5 @@
 import startGame from '../index.js';
-import randomNumber from '../randomNumber.js';
+import randomNumber from '../getRandomNumber.js';
 
 function calculateGCD(a, b) {
   if (b === 0) {
@@ -19,6 +19,6 @@ function getQuestionAndAnswer() {
   return [question, answer];
 }
 
-const start = () => startGame(getQuestionAndAnswer, rules);
+const startGcd = () => startGame(getQuestionAndAnswer, rules);
 
-export default start;
+export default startGcd;

@@ -1,5 +1,5 @@
 import startGame from '../index.js';
-import randomNumber from '../randomNumber.js';
+import randomNumber from '../getRandomNumber.js';
 
 function generateRandomOperator() {
   const operators = ['+', '-', '*'];
@@ -16,7 +16,7 @@ function calculateExpression(num1, num2, operator) {
     case '*':
       return num1 * num2;
     default:
-      return null;
+      throw new Error(`Unknown order state: '${operator}'!`);
   }
 }
 
@@ -32,6 +32,6 @@ function getQuestionAndAnswer() {
   return [question, answer];
 }
 
-const start = () => startGame(getQuestionAndAnswer, rules);
+const startCalculator = () => startGame(getQuestionAndAnswer, rules);
 
-export default start;
+export default startCalculator;

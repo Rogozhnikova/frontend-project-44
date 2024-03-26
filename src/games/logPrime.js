@@ -1,5 +1,5 @@
 import startGame from '../index.js';
-import randomNumber from '../randomNumber.js';
+import randomNumber from '../getRandomNumber.js';
 
 function isPrime(number) {
   if (number <= 1) {
@@ -23,6 +23,6 @@ function getQuestionAndAnswer() {
   return [question, answer];
 }
 
-const start = () => startGame(getQuestionAndAnswer, rules);
+const startPrime = () => startGame(getQuestionAndAnswer, rules);
 
-export default start;
+export default startPrime;
