@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import start from '../src/games/logPrime.js';
+import startPrime from '../src/games/logPrime.js';
 
-start();
+startPrime();

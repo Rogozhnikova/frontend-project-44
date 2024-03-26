@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import start from '../src/games/logEven.js';
+import startIsEven from '../src/games/logEven.js';
 
-start();
+startIsEven();
