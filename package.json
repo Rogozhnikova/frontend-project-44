@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "type": "module",
-  "description": "[![Actions Status](https://github.com/Rogozhnikova/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Rogozhnikova/frontend-project-44/actions)",
+  "description": "[![Actions Status] «Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
