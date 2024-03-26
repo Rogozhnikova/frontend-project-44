@@ -27,6 +27,6 @@ function getQuestionAndAnswer() {
   return [question, answer];
 }
 
-const start = () => startGame(getQuestionAndAnswer, rules);
+const startProgression = () => startGame(getQuestionAndAnswer, rules);
 
-export default start;
+export default startProgression;
